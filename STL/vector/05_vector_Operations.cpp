@@ -15,7 +15,7 @@ int main() {
         elements.push_back(val);
     }
 
-    cout << "elements before removing" << endl;
+    cout << "elements before removing" << endl; //use a loop to print the vector elements before removing
     for (int num : elements) {
         cout << num << " ";
     }
