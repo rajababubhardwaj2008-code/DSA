@@ -1,3 +1,11 @@
+/*"An array is a concrete box that holds a fixed number of items; 
+a vector is a magical backpack that stretches out automatically 
+as you stuff more things into it."*/
+
+/* its 3 uses: 
+1> Handling Unknown Data Sizes: Use a vector when you don't know how many inputs the user will enter beforehand (e.g., a shopping cart or a list of students).
+2> Easy Data Manipulation: Use it when you need to quickly add items to the back (push_back()), remove items (pop_back()), or clear the whole list (clear()).
+3> Using Built-in Algorithms: Use a vector when you want to easily sort, reverse, or search through data using C++ STL tools like sort() and find().*/
 #include<iostream>
 #include<vector>
 using namespace std;
