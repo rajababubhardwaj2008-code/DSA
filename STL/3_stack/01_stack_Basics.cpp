@@ -8,7 +8,7 @@
  2> removing element by using st.pop()
  3> seeing if stack is empty or not by using st.empty()
  4> checking the size of stack by using st.size()
-  if we want to print the latest value of first value we use top()
+  if we want to print the  first value we use top()
  */
 #include<iostream>
 #include<stack>
