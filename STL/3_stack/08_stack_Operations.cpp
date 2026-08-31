@@ -17,6 +17,6 @@ int main() {
         }
         st.pop();// it removes the top element so that top element cannot be stay forever.
     }
-    cout << "elements larger than 20 are :" << count << endl;
+    cout << "Elements larger than 20 are :" << count << endl;
     return 0;
 }
