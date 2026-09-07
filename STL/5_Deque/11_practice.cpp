@@ -33,15 +33,14 @@ public:
     }
 };
 
-// ADD THIS MAIN FUNCTION AT THE BOTTOM OF YOUR FILE
+
 int main() {
     Solution solver;
     string input = "(()())(())";
     
     string output = solver.removeOuterParentheses(input);
     
-    cout << "Input:  " << input << endl;
-    cout << "Output: " << output << endl;
-    
+    cout << "Input:" << input << endl;
+    cout << "Output:" << output << endl;
     return 0;
 }
