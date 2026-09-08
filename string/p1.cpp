@@ -7,7 +7,7 @@ int main() {
 
     int count = 0;
     for( int i = 0; i< str.size(); i++){
-        if( str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+        if( str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){//used for comparison
             count++;
         }
     }
