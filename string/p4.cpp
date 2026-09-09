@@ -7,7 +7,7 @@ int main() {
     int left = 0;
     int right = str.size()-1;
 
-    while(left < right){
+    while(left < right){//condition for palindrome
         if( str[left] != str[right]){
             cout << "no";
             return 0;
