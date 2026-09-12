@@ -7,7 +7,7 @@ int binarySearch(vector<int>& arr, int target) {
     int right=arr.size() - 1;
     
     while (left <= right) {
-        int mid = left+(right - left) / 2;
+        int mid = left+(right - left) / 2;// protect from overflow
         
         if (arr[mid] == target) {
             return mid;
@@ -23,11 +23,11 @@ int binarySearch(vector<int>& arr, int target) {
 }
 
 int main() {
-    vector<int> arr = {2, 5, 8, 12, 16, 23, 38, 45, 56, 72};
+    vector<int> arr = {2,5,8,12,16,23,38,45,56,72};
     int target = 23;
     
     int index = binarySearch(arr, target);
     
-    cout << "index: " << index << endl;
+    cout << "index:"<< index << endl;
     return 0;
 }
