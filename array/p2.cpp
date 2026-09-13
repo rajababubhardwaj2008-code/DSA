@@ -18,9 +18,9 @@ int main() {
         for( int i = nonZeroIndex; i<arr.size(); i++){
             arr[i] = 0;
         }
-        for( int i = 1; i<arr.size(); i++){
+        for( int i = 0; i<arr.size(); i++){
             cout << arr[i] << " ";
         }
         cout << endl;
-           
+           return 0;
     }

@@ -12,11 +12,12 @@ int main() {
                 count++;
             }
         }
-        if(count == 1){
+        if(count == 1){// this condition shows first non repeating character
             cout << "first non repeating character:" << str[i] << endl;
             return 0;
         }
     }
     cout << "no non repeating character" << endl;
     return 0;
+    
 }
