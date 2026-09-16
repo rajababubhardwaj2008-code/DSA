@@ -22,7 +22,8 @@ int main() {
       
       Node * head = nodeA;
 
-      Node* temp = head;  
+      Node* temp = head; 
+      // traversing using while loop  
 while (temp != nullptr) {
     cout << temp->data << " ";
     temp = temp->next;   
