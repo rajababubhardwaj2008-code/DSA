@@ -9,12 +9,13 @@ struct Node{
 Node * insertAtbeginning(Node*head,int value){
     Node * newNode = new Node();
     newNode->data = value;
-    newNode->next = head;
-    head = newNode;
-    return head;
+    newNode->next = head; // connect to old chain first
+    head = newNode; // then update local head
+    return head;  // hand back the new head to the caller
 }
 
 int main() {
+    // building the initial list
     Node * nodeA = new Node();
      Node * nodeB = new Node();
       Node * nodeC = new Node();
@@ -29,10 +30,10 @@ int main() {
       nodeC->next = nullptr;
 
       Node *head = nodeA;
-      head = insertAtbeginning(head,5);
+      head = insertAtbeginning(head,5);//insert 5 at the beginning
       
       Node * temp = head;
-      while(temp!= nullptr){
+      while(temp!= nullptr){// traverse and print one by one element
         cout << temp->data << " ";
         temp =  temp->next;
       }
