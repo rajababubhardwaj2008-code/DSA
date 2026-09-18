@@ -1,42 +1,51 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<iostream>
+using namespace std;
 
 struct Node {
     int data;
-    struct Node* next;
+    Node* next;
 };
 
-void printList( struct Node* head) {
-    while (head !=  NULL) {
-        printf(" %d  ", head->data);
-        head = head->next;
+Node* insertAtBeginning(Node* head, int value) {
+    Node* newNode = new Node();
+    newNode->data = value;
+    newNode->next = head;
+    head = newNode;
+    return head;
+}
+
+Node* deleteAtBeginning(Node* head) {
+    if (head == nullptr) {
+        return nullptr;
     }
-    printf("NULL\n");
+    Node* temp = head;
+    head = head->next;
+    delete temp;
+    return head;
 }
 
 int main() {
-    struct Node* head = NULL;
-    struct Node* second = NULL;
-    struct Node* third = NULL;
-
-    head = (struct Node*)malloc(sizeof(struct Node));
-    second = (struct Node*)malloc(sizeof(struct Node));
-    third = (struct Node*)malloc(sizeof(struct Node));
-
-    head->data = 9;
-    head->next = second;
-
-    second->data = 18;
-    second->next = third;
-
-    third->data = 35;
-    third->next = NULL;
-
-    printList(head);
-
-    free(head);
-    free(second);
-    free(third);
-
+    Node* nodeA = new Node();
+    Node* nodeB = new Node();
+    Node* nodeC = new Node();
+    
+    nodeA->data = 10;
+    nodeA->next = nodeB;
+    nodeB->data = 20;
+    nodeB->next = nodeC;
+    nodeC->data = 30;
+    nodeC->next = nullptr;
+    
+    Node* head = nodeA;
+    head = insertAtBeginning(head, 5);   // 5->10->20->30
+    head = deleteAtBeginning(head);       // removes 5, back to 10->20->30
+    
+    Node* temp = head;
+    while (temp != nullptr) {
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
+    cout << endl;
+    
     return 0;
 }
