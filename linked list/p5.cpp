@@ -11,10 +11,10 @@ Node* reverseList(Node*head){
     Node * curr = head;
 
     while( curr != nullptr){
-        Node * next = curr->next;
-        curr->next = prev;
-        prev = curr;
-        curr = next;
+        Node * next = curr->next;//saves the next node first
+        curr->next = prev;//reverse the current node pointer
+        prev = curr;//move prev forward
+        curr = next; //move curr forward
     }
     return prev;
 };
