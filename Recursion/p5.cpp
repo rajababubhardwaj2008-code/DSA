@@ -3,14 +3,14 @@
 using namespace std;
 
 void reverseArray(vector<int>& arr,int left,int right){
-    if( left >= right){
+    if( left >= right){// this condition for recursion stop when two pointer meets or crossed
         return ;
     }
     int temp = arr[left];
     arr[left]  = arr[right];
     arr[right] = temp;
 
-    reverseArray(arr,left+1,right-1);
+    reverseArray(arr,left+1,right-1);//recursive call with pointers moved inward
 }
 int main() {
     vector<int> arr = {1,2,3,4,5};

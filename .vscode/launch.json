@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/sundarbhardwaj/Desktop/DSA/STL/1_vector",
-      "program": "/Users/sundarbhardwaj/Desktop/DSA/STL/1_vector/build/Debug/outDebug"
+      "cwd": "/Users/sundarbhardwaj/Desktop/DSA/Recursion",
+      "program": "/Users/sundarbhardwaj/Desktop/DSA/Recursion/build/Debug/outDebug"
     }
   ]
 }
