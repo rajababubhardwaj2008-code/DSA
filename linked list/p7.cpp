@@ -51,7 +51,7 @@ int main() {
     Node* head = nodeA;
     head = insertAtEnd(head, 40);
     
-    cout << "length: " << findLength(head) << endl;
+    cout<<"length:"<<findLength(head)<<endl;
     
     Node* temp = head;
     while (temp != nullptr) {
